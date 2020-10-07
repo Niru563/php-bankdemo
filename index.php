@@ -75,10 +75,9 @@
     </div>
     
     <div class="flex-container-debug">
-    <div class="flex-item-debug">
-    <?php 
-        printf("DEBUG: APP node => %s\n", getenv("HOSTNAME"));
-    ?>
+      <div class="flex-item-debug">
+      Visitor #: <?php include('counter.php'); ?> <br/>
+      Node: <?php echo(getenv("HOSTNAME")); ?>
         </div>
     </div>
 
